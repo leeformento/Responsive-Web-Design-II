@@ -80,7 +80,7 @@ header {
 
 header nav {
     margin-top: 40px; 
-    width: 75%;
+    width: 65%;
     justify-content: space-between;
     display: flex;
 }
@@ -141,10 +141,10 @@ header .logo {
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
+   margin: 77px 0 35px 0;
    padding: 5% 0;
-   font-size: 16px;
-   line-height: 18px;
+   font-size: 1.6rem; /*16px*/
+   line-height: 1.8rem; /*18px*/
 }
 
 .main-content .top-content {
@@ -153,7 +153,7 @@ header .logo {
 
 .main-content .middle-img {
     display: block;
-    margin: 30px auto;
+    margin: 40px auto;
 }
 
 .main-content .bottom-content {
@@ -161,16 +161,19 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 10%;
 }
 
-/* Contact */
+
+.contact h4{
+    font-size: 1.6rem; /*16 px */
+}
 
 .contact p {
     margin: 15px 0;
+    font-size: 1.2rem;
 }
 
-/* Footer */
 
 footer {
     text-align: center;
@@ -179,26 +182,37 @@ footer {
 
 @media (max-width: 800px) {
   .container {
-    width: 740px;
+    width: 100%;
+    margin: 0;
+    /*width: 740px;
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap;*/
+
   }
 
   header {
-    flex-direction: column-reverse;
+    /*flex-direction: column-reverse;
+    flex-wrap: wrap;*/
+    width: 100;
     flex-wrap: wrap;
+
   }
 
-  header nav a {
-    margin-right: 70px;
-    margin-left: 10px;
+  header nav {
+      width: 96%;
+      padding: 0px 3% 0 4%;
   }
+
 
   header .logo {
-    align-self: center;
-    margin: 30px 0 0 11px;
+      order: -1;
+      display: block;
+      margin: 30px auto 0 39.6%;
   }
+    /*align-self: center;
+    margin: 30px 0 0 11px;
+  }*/
 
   .cta img {
     display: none;
@@ -206,27 +220,27 @@ footer {
 
   .cta {
     justify-content: center;
-    margin-left: 100px;
+    width: 100%;
   }
 
-  .main-content .top-content {
-    justify-content: space-around;
+  .main-content {
+      margin: 80px 1% 35px 3%;
+  }
+  
+  .main-content .bottom-content p {
+      padding: 0px 8% 0px 0px;
   }
 
-.main-content .top-content .text-content {
-  margin: 0px 15px;
-}
-
-  .main-content img {
-    width: 740px;
+  .main-content .middle-img {
+    width: 100%;
   }
 
-  .bottom-content .text-content {
-    margin: 0px 15px;
+  .text-content {
+      margin: 0px 2%;
   }
 
   .contact {
-    margin-left: 15px;
+    margin: 0 4%;
   }
 }
 
